@@ -28,6 +28,7 @@ $(document).ready(function()
 // srolling effect
 $(window).on("scroll", function()
 {
+  console.log("scroll");
   if($(window).scrollTop())
   {
     $('nav').addClass('black');
@@ -73,6 +74,17 @@ const observer = new IntersectionObserver(callback, options);
 sections.forEach((section, index) =>
 {
   observer.observe(section);
+});
+
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
 });
 
 window.onload(removeClass());
