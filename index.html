@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link href="./static/css/main.css" rel='stylesheet'>
         <link href="https://fonts.googleapis.com/css?family=Quicksand:500" rel="stylesheet">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">-->
         <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,300,700|Roboto:400,700' rel='stylesheet' type='text/css'>
 
         <title>Gennaro Rubino</title>
@@ -21,20 +21,31 @@
 
             <section data-index="1" id="aboutMe">
             <div class="container-fluid">
-                <div id="aboutMeBox" class="row justify-content-md-center section-container">
-                    <nav>
+                <nav class="row justify-content-md-center section-container">
+                    <div class="col-md-3">
                         <div class="logo">
                             GENNARO RUBINO
                         </div>
-                        <div class="menu">
-                            <ul>
-                                <li><a href="#aboutMe" style="margin: 0px 35px;">About Me</a></li>
-                                <li><a href="#experience" style="margin: 0px 35px;">Skills</a></li>
-                                <li><a href="#projects" style="margin: 0px 35px;">Projects</a></li>
-                                <li><a href="#contact" style="margin: 0px 35px;">Contact</a></li>
-                            </ul>
+                    </div>
+                    <div class="menu col-md-9">
+                        <div class="row justify-content-md-center">
+                            <div class="col-3">
+                                <a href="#aboutMe">About Me</a>
+                            </div>
+                            <div class="col-3">
+                                <a href="#experience">Skills</a>
+                            </div>
+                            <div class="col-3">
+                                <a href="#projects">Projects</a>
+                            </div>
+                            <div class="col-3">
+                                <a href="#contact">Contact</a>
+                            </div>
                         </div>
-                    </nav>
+                    </div>
+                </nav>
+                <div id="aboutMeBox" class="row justify-content-md-center section-container">
+
                     <div class="col-md-5">
                         <div style="text-align: center;">
                             <h2>Who I Am</h2>
@@ -115,14 +126,21 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
-                        <div style="text-align: center;">
+                    <div class="col-md-3 whatIusedBox">
+                        <div>
                             <h2>What I've Used</h2>
                             <hr />
                         </div>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et ipsum est. Sed ac porttitor magna. Maecenas mattis consequat tincidunt. Integer consequat ultrices porttitor. Quisque quis interdum metus. Pellentesque sit amet magna sodales, interdum purus in, dignissim tortor. Sed dui enim, finibus ut ex vitae, varius eleifend massa. Mauris et felis quis sapien tempus tincidunt quis at libero. Phasellus quis felis egestas, varius urna a, blandit orci. Donec vitae ex scelerisque, mattis sem nec, fermentum lectus. Sed luctus augue in interdum pharetra.
-                        </p>
+                        <div class="justify">
+                            <p>
+                                Throught my studies and my time spent on personal projects I have become familiar with various scripting and programing languages commonly used in the industry. I've also used several tools and IDEs over
+                                the years such as Android Studio, Git, Net Beans, Eclipse, and Atom.
+                            </p>
+                            <br />
+                            <p>
+                                Majority of my work is done on Linux and Windows, however, I am no stranger to MacOS X.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -184,24 +202,23 @@
                             <h2>Contact Me</h2>
                             <hr />
                         </div>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et ipsum est. Sed ac porttitor magna. Maecenas mattis consequat tincidunt. Integer consequat ultrices porttitor. Quisque quis interdum metus. Pellentesque sit amet magna sodales, interdum purus in, dignissim tortor. Sed dui enim, finibus ut ex vitae, varius eleifend massa. Mauris et felis quis sapien tempus tincidunt quis at libero. Phasellus quis felis egestas, varius urna a, blandit orci. Donec vitae ex scelerisque, mattis sem nec, fermentum lectus. Sed luctus augue in interdum pharetra.
+                        <p class="centered">
+                            Thank you for visiting my website.
                         </p>
                         <br />
                         <p>
-                            Fusce ac dolor eu erat fringilla cursus et sit amet ligula. Nunc ultricies lorem a mauris iaculis dapibus. Maecenas velit sem, mollis interdum sem quis, pharetra viverra mauris. Aenean accumsan arcu eu euismod fermentum. Morbi imperdiet risus condimentum, dictum ante in, dictum enim. Suspendisse finibus libero non dictum congue. Vivamus maximus lorem tempus velit feugiat, ut faucibus lectus sagittis. Donec augue tellus, fermentum et ornare eu, finibus eu justo.
+                            If you wish to learn more about me, a link to my resume can be found <a href="" class="github-contact">here</a>, or you can visit my LinkedIn or GitHub by clicking on the icons below.
                         </p>
-                        <br />
-                        <p>
-                            Vivamus vestibulum tortor eget ligula volutpat consequat. Mauris feugiat mauris in velit cursus, at rutrum justo volutpat. Pellentesque congue, est id dignissim tempor, libero neque sagittis arcu, non vestibulum ante felis vitae est. Phasellus ut felis non magna semper gravida. Quisque et magna eu quam pellentesque ultrices id pulvinar dolor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse potenti. Sed sagittis ornare tellus in commodo. In dapibus efficitur neque eget sollicitudin. Aliquam erat volutpat. Sed dictum diam odio, in bibendum turpis interdum sed.
+                        <p class="centered">
+                            <a href="" class="icon-link">
+                                <i class="fa fa-5x fa-github-square"></i>
+                            </a>
+                            <a href="" class="icon-link">
+                                <i class="fab fa-5x fa-linkedin"></i>
+                            </a>
                         </p>
-                        <br />
                         <p>
-                            Proin id consequat turpis, et vulputate odio. Aliquam erat volutpat. Suspendisse rutrum ac velit quis feugiat. Sed arcu massa, interdum non fermentum id, tristique congue eros. Ut eget purus elementum nibh auctor scelerisque eu ut sem. Integer non ultricies lacus. Vivamus ut hendrerit ipsum. Nunc laoreet suscipit erat ac lacinia. Vivamus ac accumsan ex. Nullam at sodales arcu, quis efficitur enim. Nunc elementum enim et ante dignissim consequat.
-                        </P>
-                        <br />
-                        <p>
-                            Maecenas tempor turpis non lorem malesuada dictum. Morbi rhoncus neque nec dictum consectetur. Aenean imperdiet iaculis odio id imperdiet. Etiam mattis in diam a porttitor. Sed molestie ipsum eu interdum semper. Donec at ultricies orci. Praesent malesuada, eros viverra elementum rutrum, leo sem posuere est, et posuere purus leo et odio. Nam finibus ligula eget libero cursus, sed blandit ligula vulputate. Aliquam a libero diam. Aliquam et elit a felis porttitor egestas in non ipsum. Duis gravida nibh eget diam imperdiet facilisis. Nam justo orci, efficitur eget venenatis sed, fermentum quis felis. Duis erat ipsum, luctus quis scelerisque et, pellentesque id leo. Aenean semper justo erat, nec vestibulum lectus malesuada id. Phasellus lectus magna, tempor vitae erat quis, facilisis ultricies urna.
+                            Additionally, I can be contacted directly about employment or collaboration opportunties by sending an email to GRubino.18 at GMail.
                         </p>
                     </div>
                 </div>
@@ -213,6 +230,7 @@
         <script src="./static/js/main.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/2db8f01283.js" crossorigin="anonymous"></script>
     </body>
 
 </html>

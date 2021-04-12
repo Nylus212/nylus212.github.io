@@ -52,11 +52,23 @@ body
 }
 */
 
+p
+{
+  font-size: 1.2em;
+  text-align: justify
+}
+
+.centered
+{
+  text-align: center;
+}
+
 img
 {
   width: 70%;
-  border-radius: 50%;
-  margin-top: 20px;
+  border-radius: 25%;
+  margin-top: -10px;
+  margin-left: 100px;
 }
 
 hr
@@ -64,6 +76,17 @@ hr
   background-color: #fdf6e3;
   height: 2px;
   width: 85%;
+}
+
+.whatIusedBox
+{
+  text-align: center;
+  margin-top: 150px;
+}
+
+.justify
+{
+  ;
 }
 
 #aboutMe
@@ -163,12 +186,18 @@ hr
   text-decoration: underline;
 }
 
-.github:visited
+.github-contact
+{
+  color: #fdf6e3;
+  text-decoration: underline;
+}
+
+a:visited
 {
   color: #fdf6e3;
 }
 
-.github:hover
+a:hover
 {
   color: #cb4b16;
 }
@@ -180,6 +209,24 @@ hr
   padding: 5px 20px;
   margin: 24px 5px;
   min-width: 900px;
+}
+
+i
+{
+  color: #fdf6e3;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.icon-link:hover
+{
+  text-decoration: none;
+}
+
+.icon-link:hover i
+{
+  text-decoration: none;
+  color: #b1ac9e;
 }
 
 /********************************** Navbar ************************************/
@@ -217,9 +264,9 @@ body
   position: fixed;
   float: left;
   margin: 16px 36px;
-  color: #fff;
+  color: #fdf6e3;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 36px;
 }
 
 nav
@@ -229,13 +276,27 @@ nav
   width: 100%;
 }
 
-nav a:hover
+nav a
 {
-  font-weight: 1000;
-  color: #fdf6e3;
+  font-size: 18px;
 }
 
-nav ul
+nav a:hover
+{
+  /*font-weight: 1000;*/
+  text-shadow: 1px 0 #fdf6e3;
+  letter-spacing:1px;
+  font-weight:bold;
+  color: #fdf6e3;
+  text-decoration: none;
+}
+
+.menu
+{
+   margin-top: 33px;
+}
+
+/*nav ul
 {
   list-style: none;
   background: rgba (0,0,0,0);
@@ -264,7 +325,7 @@ nav ul li a
   text-decoration: none;
   color: #fff;
   font-size:14px;
-}
+}*/
 
 .menu-icon
 {
@@ -287,7 +348,7 @@ nav ul li a
     margin-top: 16px;
   }
 
-  nav ul
+ /* nav ul
   {
     max-height: 0px;
     background: #000;
@@ -309,7 +370,7 @@ nav ul li a
     width: 100%;
     padding: 24px 0;
     text-align: center;
-  }
+  }*/
 
   .menu-icon
   {
