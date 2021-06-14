@@ -179,14 +179,14 @@ hr
   text-align: center;
 }
 
-.github
+.gitlab
 {
   color: #fdf6e3;
   font-size: 1.4em;
   text-decoration: underline;
 }
 
-.github-contact
+.gitlab-contact
 {
   color: #fdf6e3;
   text-decoration: underline;
@@ -202,7 +202,7 @@ a:hover
   color: #cb4b16;
 }
 
-.githubBox
+.gitlabBox
 {
   border: solid 3px #fdf6e3;
   border-radius: 5px;
@@ -227,6 +227,20 @@ i
 {
   text-decoration: none;
   color: #b1ac9e;
+}
+
+.footer
+{
+  height: 40px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-text
+{
+  text-align: right;
+  padding-right: 20px;
 }
 
 /********************************** Navbar ************************************/
