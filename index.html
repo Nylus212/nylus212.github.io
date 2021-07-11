@@ -22,12 +22,12 @@
             <section data-index="1" id="aboutMe">
             <div class="container-fluid">
                 <nav class="row justify-content-md-center section-container">
-                    <div class="col-md-3">
+                    <div class="col-12 col-lg-3">
                         <div class="logo">
                             GENNARO RUBINO
                         </div>
                     </div>
-                    <div class="menu col-md-9">
+                    <div class="menu d-none d-sm-none d-md-none d-lg-block col-lg-9">
                         <div class="row justify-content-md-center">
                             <div class="col-3">
                                 <a href="#aboutMe">About Me</a>
@@ -45,9 +45,17 @@
                     </div>
                 </nav>
                 <div id="aboutMeBox" class="row justify-content-md-center section-container">
-
-                    <div class="col-md-5">
-                        <div style="text-align: center;">
+                    <div class="col-12 d-lg-none d-xl-none">
+                        <div class="centered">
+                            <h2>Who I Am</h2>
+                            <hr />
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3 order-lg-12">
+                        <img src="./static/images/selfSquare.jpg" alt="Gennaro Rubino" />
+                    </div>
+                    <div class="col-12 col-lg-5">
+                        <div class="centered aboutTitleLg">
                             <h2>Who I Am</h2>
                             <hr />
                         </div>
@@ -64,9 +72,7 @@
                             Before receiving my degree, I've had a background with art, technical rescue training, and an electricians' apprenticeship.
                         </p>
                     </div>
-                    <div class="hidden-xs col-md-3">
-                        <img src="./static/images/selfSquare.jpg" alt="Gennaro Rubino" />
-                    </div>
+
                 </div>
             </div>
             </section>
@@ -149,7 +155,7 @@
                 <div class="container-fluid">
                     <div id="projectsBox" class="row justify-content-md-center section-container">
                         <div class="col-md-8">
-                            <div class="text-center">
+                            <div class="centered">
                                 <h2>My Projects</h2>
                                 <hr />
                             </div>
@@ -157,28 +163,28 @@
                     </div>
                     <div class="row justify-content-md-center">
                         <div class="col-md-8">
-                            <div class="row">
-                                <div class="col-4">
+                            <div class="col-container">
+                                <div class="project-col">
                                     <div class="projectBox">
-                                        <h3 class="text-center">Gym Journal</h3>
+                                        <h3>Gym Journal</h3>
                                         <p>
                                             For my undergrad capstone I developed a dynamic web application for users to record and track fitness progression in training programs for running, weightlifting and pull ups. This project
                                             features log in credentials and authentication, reading from and writing to a persistent database, HTML view templating and AJAX.
                                         </p>
                                     </div>
                                 </div>
-                                <div class="col-4">
+                                <div class="project-col">
                                     <div class="projectBox">
-                                        <h3 class="text-center">Gym Journal Android App</h3>
+                                        <h3>Gym Journal Android App</h3>
                                         <p>
                                             An android predecessor to my Gym Journal web application. User's metrics for running, conjugate method power lifting and the "Insanity" fit test is persistently stored so that navigation or closing
                                             the application is not lost. These stored records can be navigated through to review fitness progression and comparisons to dictate improvements can be made.
                                         </p>
                                     </div>
                                 </div>
-                                <div class="col-4">
+                                <div class="project-col">
                                     <div class="projectBox">
-                                        <h3 class="text-center">Asteroids JS</h3>
+                                        <h3>Asteroids JS</h3>
                                         <p>The 1979 arcade game by Atari, Asteroids, recreated in javascript. All objects on screen are rendered through the use of HTML5 canvas elements. Sound and UFOs have not been added to the project.</p>
                                     </div>
                                 </div>
@@ -186,7 +192,7 @@
                         </div>
                     </div>
                     <div class="row justify-content-md-center">
-                      <div class="col-xs-12 text-center">
+                      <div class="col-12 centered">
                           <div class="gitlabBox">
                               <a href="https://gitlab.com/users/Nylus/projects" class="gitlab">GitLab Repository</a>
                           </div>
@@ -198,7 +204,7 @@
             <section data-index="4" id="contact">
                 <div class="container-fluid">
                     <div id="contactBox" class="row justify-content-md-center section-container">
-                        <div class="col-xs-8 col-sm-6 col-md-4">
+                        <div class="col-8 col-sm-6 col-md-4">
                             <div style="text-align: center;">
                                 <h2>Contact Me</h2>
                                 <hr />
