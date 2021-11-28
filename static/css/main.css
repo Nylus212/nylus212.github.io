@@ -13,8 +13,9 @@ img
 {
   width: 70%;
   border-radius: 25%;
-  margin-top: -10px;
-  margin-left: 100px;
+  display: block;
+  margin: auto;
+
 }
 
 hr
@@ -24,7 +25,20 @@ hr
   width: 85%;
 }
 
-.aboutTitleLg
+.logo
+{
+  color: #fdf6e3;
+  font-weight: bold;
+  font-size: 36px;
+  text-align: center;
+}
+
+section
+{
+  min-height: 100vh;
+}
+
+.sectionTitleLg
 {
   display: none;
 }
@@ -32,7 +46,6 @@ hr
 .whatIusedBox
 {
   text-align: center;
-  margin-top: 150px;
 }
 
 #aboutMe
@@ -65,11 +78,17 @@ hr
 #contact
 {
   background-color: #1d1e21;
+  height: 100vh;
+}
+
+.contact-container
+{
+  height: 100%;
 }
 
 .bubble
 {
-  padding: 20px 20px;
+  padding: 5px;
   text-align: center;
   word-wrap: break-word;
 }
@@ -119,8 +138,8 @@ hr
 
 .project-col
 {
-  display: table-cell;
-  width: 33%;
+  display: table-row;
+  width: 66%;
 }
 
 .projectBox
@@ -176,8 +195,8 @@ a:hover
   border: solid 3px #fdf6e3;
   border-radius: 5px;
   padding: 5px 20px;
-  margin: 24px 5px;
-  min-width: 900px;
+  margin: 16px auto;
+  width: 33%;
 }
 
 i
@@ -198,18 +217,22 @@ i
   color: #b1ac9e;
 }
 
+.icon-container
+{
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
 .footer
 {
   height: 40px;
-  position: fixed;
-  bottom: 0;
   width: 100%;
 }
 
 .footer-text
 {
-  text-align: right;
-  padding-right: 20px;
+  text-align: center;
+  font-size: 1.2em;
 }
 
 /********************************** Navbar ***********************************/
@@ -226,12 +249,7 @@ body
   font-family: Quicksand;
 }
 
-.logo
-{
-  position: fixed;
-  top: 0;
-  margin-top: 16px;
-}
+
 
 
 nav
@@ -244,6 +262,7 @@ nav
 nav a
 {
   font-size: 18px;
+  color: #fdf6e3;
 }
 
 nav a:hover
@@ -266,26 +285,14 @@ nav a:hover
   display: block;
 }
 
+/*****************************************************************************/
+
 /******************************* Scrolling ***********************************/
 
 *
 {
   box-sizing: border-box;
   color: #fdf6e3;
-}
-
-/* All the snapping stuff */
-.scroll-container
-{
-  height: 100vh;
-  overflow-y: scroll;
-  scroll-snap-type: y mandatory;
-}
-
-section
-{
-  height: 100vh;
-  scroll-snap-align: center;
 }
 
 /* Other styles */
@@ -299,15 +306,10 @@ section
 
 section h2
 {
-  opacity: 0;
-  transition: all 3000ms;
+    opacity: 1;
 }
 
-section.is-visible h2
-{
-  opacity: 1;
-  transform: scale(1.25);
-}
+/*****************************************************************************/
 
 /****************************** Size Classes *********************************/
 
@@ -316,12 +318,7 @@ section.is-visible h2
 {
   .logo
   {
-    position: fixed;
-    float: left;
-    margin: 16px 36px;
-    color: #fdf6e3;
-    font-weight: bold;
-    font-size: 36px;
+
   }
 
   .menu-icon
@@ -346,14 +343,117 @@ section.is-visible h2
 /* Large devices (desktops, >= 992px) */
 @media (min-width: 992px)
 {
-  .aboutTitleLg
+  section
+  {
+    min-height: default;
+  }
+
+  .sectionTitleLg
   {
     display: inline;
+  }
+
+  .logo
+  {
+    position: fixed;
+    top: 0;
+    float: left;
+    margin: 16px 36px;
+  }
+
+  .img-container, #wrapper
+  {
+   height:100%;
+   width: 100%;
+   margin: 0;
+   padding: 0;
+   border: 0;
+  }
+
+  #wrapper td
+  {
+   vertical-align: middle;
+   text-align: center;
+  }
+
+  img
+  {
+    /*margin-top: -10px;
+    margin-left: 100px;*/
+  }
+
+  /* All the snapping stuff */
+  .scroll-container
+  {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+  }
+
+  section
+  {
+    height: 100vh;
+    scroll-snap-align: center;
+  }
+
+  section h2
+  {
+    opacity: 0;
+    transition: all 3000ms;
+  }
+
+  section.is-visible h2
+  {
+    opacity: 1;
+    transform: scale(1.25);
+  }
+
+  .bubble
+  {
+    padding: 20px 20px;
+  }
+
+  .whatIusedBox
+  {
+    margin-top: 150px;
+  }
+
+   .footer-text
+  {
+    text-align: center;
   }
 }
 
 /* Extra large devices (large desktops, >= 1200px) */
 @media (min-width: 1200px)
 {
+    img
+    {
+      margin-top: -10px;
+      margin-left: 100px;
+    }
+
+    .project-col
+    {
+      display: table-cell;
+      width: 33%;
+    }
+
+    .footer
+    {
+      height: 40px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    .footer-text
+    {
+      text-align: right;
+      padding-right: 20px;
+    }
+
 
 }
+
+/*****************************************************************************/
