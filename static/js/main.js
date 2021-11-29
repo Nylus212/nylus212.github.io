@@ -25,21 +25,17 @@ $(document).ready(function()
   });
 });*/
 
-const LgMediaSize = 992;
 
 // srolling effect
 $(window).on("scroll", function()
 {
-  if ($(window).innerWidth >= LgMediaSize)
+  if($(window).scrollTop())
   {
-    if($(window).scrollTop())
-    {
-      $('nav').addClass('black');
-    }
-    else
-    {
-      $('nav').removeClass('black');
-    }
+    $('nav').addClass('black');
+  }
+  else
+  {
+    $('nav').removeClass('black');
   }
 })
 
@@ -91,20 +87,10 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor =>
 
 function registerObservers()
 {
-    if (window.innerWidth >= LgMediaSize)
-    {
-        sections.forEach((section, index) =>
-        {
-          observer.observe(section);
-        });
-    }
-    else
-    {
-        sections.forEach((section, index) =>
-        {
-          observer.unobserve(section);
-        });
-    }
+  sections.forEach((section, index) =>
+  {
+    observer.observe(section);
+  });
 }
 
 registerObservers();

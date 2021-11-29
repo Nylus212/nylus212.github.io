@@ -98,37 +98,37 @@ section
   display: block;
   margin-right: auto;
   margin-left: auto;
-  height: 180px;
+  height: 95px;
   width: 180px;
   border: solid 3px #fdf6e3;
-  border-radius: 50%;
-  background-color: #fdf6e3;
+  border-radius: 25px;
+  /*background-color: #fdf6e3;*/
 }
 
 .bubble h3
 {
-  color: #2aa198;
-  padding-top: 63px;
-  font-size: 2.5em;
+  color: #fdf6e3;
+  padding-top: 5px;
+  font-size: 2.1em;
   font-weight: 700;
   font-family: Ubuntu;
 }
 
-.bubble h3.top-padding
+.bubble h3.top-padding-smff
 {
-  padding-top: 42px;
+  padding-top: 25px;
 }
 
-.bubble h3.size
+/*.bubble h3.size
 {
   font-size: 2.1em;
-}
+}*/
 
-.bubble h3.ASP
+/*.bubble h3.ASP
 {
   padding-top: 50px;
   font-size: 2.2em;
-}
+}*/
 
 .col-container
 {
@@ -304,9 +304,22 @@ section
   justify-content: center;
 }
 
-section h2
+/*section h2
 {
     opacity: 1;
+}*/
+
+/* Fade in on scroll */
+section h2
+{
+  opacity: 0;
+  transition: all 1000ms;
+}
+
+section.is-visible h2
+{
+  opacity: 1;
+  transform: scale(1.25);
 }
 
 /*****************************************************************************/
@@ -337,7 +350,54 @@ section h2
 /* Medium devices (tablets, >= 768px) */
 @media (min-width: 768px)
 {
+    .bubble
+    {
+      padding: 5px;
+      text-align: center;
+      word-wrap: break-word;
+    }
 
+    .bubble div
+    {
+      display: block;
+      margin-right: auto;
+      margin-left: auto;
+      height: 180px;
+      width: 180px;
+      border: solid 3px #fdf6e3;
+      border-radius: 50%;
+      background-color: #fdf6e3;
+    }
+
+    .bubble h3
+    {
+      color: #2aa198;
+      padding-top: 63px;
+      font-size: 2.5em;
+      font-weight: 700;
+      font-family: Ubuntu;
+    }
+
+    .bubble h3.top-padding
+    {
+      padding-top: 42px;
+    }
+
+    .bubble h3.top-padding-smff
+    {
+      padding-top: 63px;
+    }
+
+    .bubble h3.size
+    {
+      font-size: 2.1em;
+    }
+
+    .bubble h3.ASP
+    {
+      padding-top: 50px;
+      font-size: 2.2em;
+    }
 }
 
 /* Large devices (desktops, >= 992px) */
@@ -362,6 +422,11 @@ section h2
     margin: 16px 36px;
   }
 
+  section h2
+  {
+    transition: all 2000ms;
+  }
+
   .img-container, #wrapper
   {
    height:100%;
@@ -381,19 +446,6 @@ section h2
   {
     /*margin-top: -10px;
     margin-left: 100px;*/
-  }
-
-  /* Fade in on scroll */
-  section h2
-  {
-    opacity: 0;
-    transition: all 3000ms;
-  }
-
-  section.is-visible h2
-  {
-    opacity: 1;
-    transform: scale(1.25);
   }
 
   .bubble
