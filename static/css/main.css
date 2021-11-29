@@ -475,16 +475,56 @@ section.is-visible h2
     padding: 20px 20px;
   }
 
-  
+  .bubble div
+  {
+    height: 140px;
+    width: 140px;
+  }
+
+  .bubble h3
+  {
+    color: #2aa198;
+    padding-top: 63px;
+    font-size: 2em;
+    font-weight: 700;
+    font-family: Ubuntu;
+  }
+
+  .bubble h3.top-padding-smff
+  {
+    padding-top: 48px;
+  }
+
+  .bubble h3.top-padding
+  {
+    padding-top: 33px;
+  }
+
+  .bubble h3.size
+  {
+    padding-top: 53px;
+    font-size: 1.6em;
+  }
+
+  .bubble h3.ASP
+  {
+    padding-top: 45px;
+    font-size: 1.6em;
+  }
 
   .projectBox
   {
     min-height: 230px;
   }
 
+  .lg-bubblesBox
+  {
+    margin-top: 40px;
+  }
+
   .whatIusedBox
   {
-    margin-top: 150px;
+    margin-top: 80px;
   }
 
    .footer-text
@@ -500,6 +540,43 @@ section.is-visible h2
     {
       margin-top: -10px;
       margin-left: 100px;
+    }
+
+    .bubble div
+    {
+      height: 180px;
+      width: 180px;
+    }
+
+    .bubble h3
+    {
+      font-size: 2.5em;
+    }
+
+    .bubble h3.top-padding
+    {
+      padding-top: 42px;
+    }
+
+    .bubble h3.top-padding-smff
+    {
+      padding-top: 63px;
+    }
+
+    .bubble h3.size
+    {
+      font-size: 2.1em;
+    }
+
+    .bubble h3.ASP
+    {
+      padding-top: 50px;
+      font-size: 2.2em;
+    }
+
+    .whatIusedBox
+    {
+      margin-top: 180px;
     }
 
     .project-col
