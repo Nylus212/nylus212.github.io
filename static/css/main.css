@@ -400,6 +400,11 @@ section.is-visible h2
       font-size: 2.2em;
     }
 
+    .section-spacing
+    {
+      padding-top: 100px;
+    }
+
     .projectBox
     {
       padding: 5px 0px;
@@ -419,6 +424,7 @@ section.is-visible h2
     .gitlabBox
     {
       width: 60%;
+      margin-bottom: 100px;
     }
 }
 
@@ -512,11 +518,6 @@ section.is-visible h2
     font-size: 1.6em;
   }
 
-  .projectBox
-  {
-    min-height: 230px;
-  }
-
   .lg-bubblesBox
   {
     margin-top: 40px;
@@ -525,6 +526,11 @@ section.is-visible h2
   .whatIusedBox
   {
     margin-top: 80px;
+  }
+
+  .projectBox
+  {
+    min-height: 230px;
   }
 
    .footer-text
@@ -579,6 +585,11 @@ section.is-visible h2
       margin-top: 180px;
     }
 
+    .section-spacing
+    {
+      padding-top: 0px;
+    }
+
     .project-col
     {
       display: table-cell;
@@ -593,6 +604,7 @@ section.is-visible h2
     .gitlabBox
     {
       width: 40%;
+      margin-bottom: default;
     }
 
     .footer
