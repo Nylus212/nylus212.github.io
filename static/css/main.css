@@ -15,7 +15,7 @@ img
   border-radius: 25%;
   display: block;
   margin: auto;
-
+  padding-bottom: 12px;
 }
 
 hr
@@ -29,7 +29,7 @@ hr
 {
   color: #fdf6e3;
   font-weight: bold;
-  font-size: 36px;
+  font-size: 32px;
   text-align: center;
 }
 
@@ -356,6 +356,7 @@ section h2
   .logo
   {
     position: fixed;
+    font-size: 36px;
     top: 0;
     float: left;
     margin: 16px 36px;
@@ -382,20 +383,7 @@ section h2
     margin-left: 100px;*/
   }
 
-  /* All the snapping stuff */
-  .scroll-container
-  {
-    height: 100vh;
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;
-  }
-
-  section
-  {
-    height: 100vh;
-    scroll-snap-align: center;
-  }
-
+  /* Fade in on scroll */
   section h2
   {
     opacity: 0;
@@ -453,6 +441,19 @@ section h2
       padding-right: 20px;
     }
 
+    /* Scroll Snapping */
+    .scroll-container
+    {
+      height: 100vh;
+      overflow-y: scroll;
+      scroll-snap-type: y mandatory;
+    }
+
+    section
+    {
+      height: 100vh;
+      scroll-snap-align: center;
+    }
 
 }
 
