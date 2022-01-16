@@ -1,7 +1,7 @@
 p
 {
   font-size: 1.2em;
-  text-align: justify
+  text-align: justify;
 }
 
 .centered
@@ -36,6 +36,7 @@ hr
 section
 {
   min-height: 100vh;
+  overflow: hidden;
 }
 
 .sectionTitleLg
@@ -46,6 +47,12 @@ section
 .whatIusedBox
 {
   text-align: center;
+  padding: 30px;
+}
+
+.contactText
+{
+  padding: 20px;
 }
 
 #aboutMe
@@ -78,7 +85,7 @@ section
 #contact
 {
   background-color: #1d1e21;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .contact-container
@@ -99,7 +106,7 @@ section
   margin-right: auto;
   margin-left: auto;
   height: 95px;
-  width: 180px;
+  width: 175px;
   border: solid 3px #fdf6e3;
   border-radius: 25px;
   /*background-color: #fdf6e3;*/
@@ -203,8 +210,16 @@ a:hover
 i
 {
   color: #fdf6e3;
-  margin-left: 50px;
-  margin-right: 50px;
+}
+
+.i-GitLab
+{
+  margin-right: 30px;
+}
+
+.i-LinkedIn
+{
+  margin-left: 30px;
 }
 
 .icon-link:hover
@@ -346,6 +361,18 @@ section.is-visible h2
     color: #fff;
     display: none;
   }
+
+  .footer
+  {
+    height: 40px;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .footer-text
+  {
+    text-align: center;
+  }
 }
 
 /* Medium devices (tablets, >= 768px) */
@@ -425,6 +452,16 @@ section.is-visible h2
     {
       width: 60%;
       margin-bottom: 100px;
+    }
+
+    .i-GitLab
+    {
+      margin-right: 50px;
+    }
+
+    .i-LinkedIn
+    {
+      margin-left: 50px;
     }
 }
 
@@ -531,11 +568,6 @@ section.is-visible h2
   .projectBox
   {
     min-height: 230px;
-  }
-
-   .footer-text
-  {
-    text-align: center;
   }
 }
 
