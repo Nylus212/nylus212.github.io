@@ -1,3 +1,8 @@
+:root
+{
+  --section-padding: 1rem;
+}
+
 p
 {
   font-size: 1.2em;
@@ -86,6 +91,11 @@ section
 {
   background-color: #1d1e21;
   min-height: 100vh;
+}
+
+#contact .row
+{
+  height: calc(100vh - (2 * var(--section-padding)));
 }
 
 .contact-container
@@ -241,14 +251,18 @@ i
 
 .footer
 {
-  height: 40px;
+  height: auto;
   width: 100%;
+  position: relative;
 }
 
 .footer-text
 {
+  position: absolute;
   text-align: center;
   font-size: 1.2em;
+  width: 100%;
+  bottom: 0;
 }
 
 /********************************** Navbar ***********************************/
@@ -314,7 +328,7 @@ nav a:hover
 /* Other styles */
 section
 {
-  padding: 1rem;
+  padding: var(--section-padding);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -360,13 +374,6 @@ section.is-visible h2
     cursor: pointer;
     color: #fff;
     display: none;
-  }
-
-  .footer
-  {
-    height: 40px;
-    bottom: 0;
-    width: 100%;
   }
 
   .footer-text
@@ -644,7 +651,6 @@ section.is-visible h2
       height: 40px;
       position: fixed;
       bottom: 0;
-      width: 100%;
     }
 
     .footer-text

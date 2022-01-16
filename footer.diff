@@ -1,0 +1,155 @@
+diff --git a/index.html b/index.html
+index 91e764a..44441f8 100644
+--- a/index.html
++++ b/index.html
+@@ -222,41 +222,39 @@
+ 
+             <section data-index="4" id="contact">
+                 <div class="container-fluid contact-container">
+-                    <div class="row">
+-                        <div id="contactBox" class="row justify-content-md-center section-container">
+-                            <div class="col-12 col-sm-8 col-xl-4">
+-                                <div class="centered section-spacing">
+-                                    <h2>Contact Me</h2>
+-                                    <hr />
+-                                </div>
+-                                <p class="centered">
+-                                    Thank you for visiting my website.
+-                                </p>
+-                                <br />
+-                                <p class="contactText">
+-                                    If you wish to learn more about me, a link to my resume can be found <a href="./static/files/gennaroRubinoResume.pdf" class="gitlab-contact">here</a>, or you can visit my LinkedIn or GitLab by clicking on the icons below.
+-                                </p>
+-                                <p class="centered icon-container">
+-                                    <a href="https://gitlab.com/Nylus" class="icon-link">
+-                                        <i class="fa fa-5x fa-gitlab i-GitLab"></i>
+-                                    </a>
+-                                    <a href="https://linkedin.com/in/gennaro-rubino-2a3b13136" class="icon-link">
+-                                        <i class="fab fa-5x fa-linkedin i-LinkedIn"></i>
+-                                    </a>
+-                                </p>
+-                                <p class="contactText">
+-                                    Additionally, I can be contacted directly about employment or collaboration opportunties by sending an email to GRubino.18 at GMail.
+-                                </p>
+-                            </div>
+-                            <div class="footer d-xl-none">
+-                                <div class="footer-text">
+-                                    <span>
+-                                        © 2021 Gennaro Raffaele Rubino
+-                                    </span>
+-                                </div>
+-                            </div>
+-                        </div>
+-                    </div>
++                  <div id="contactBox" class="row justify-content-md-center section-container">
++                      <div class="col-12 col-sm-8 col-xl-4">
++                          <div class="centered section-spacing">
++                              <h2>Contact Me</h2>
++                              <hr />
++                          </div>
++                          <p class="centered">
++                              Thank you for visiting my website.
++                          </p>
++                          <br />
++                          <p class="contactText">
++                              If you wish to learn more about me, a link to my resume can be found <a href="./static/files/gennaroRubinoResume.pdf" class="gitlab-contact">here</a>, or you can visit my LinkedIn or GitLab by clicking on the icons below.
++                          </p>
++                          <p class="centered icon-container">
++                              <a href="https://gitlab.com/Nylus" class="icon-link">
++                                  <i class="fa fa-5x fa-gitlab i-GitLab"></i>
++                              </a>
++                              <a href="https://linkedin.com/in/gennaro-rubino-2a3b13136" class="icon-link">
++                                  <i class="fab fa-5x fa-linkedin i-LinkedIn"></i>
++                              </a>
++                          </p>
++                          <p class="contactText">
++                              Additionally, I can be contacted directly about employment or collaboration opportunties by sending an email to GRubino.18 at GMail.
++                          </p>
++                      </div>
++                      <div class="footer d-xl-none">
++                          <div class="footer-text">
++                              <span>
++                                  © 2021 Gennaro Raffaele Rubino
++                              </span>
++                          </div>
++                      </div>
++                  </div>
+                 </div>
+                 <div class="footer d-none d-sm-none d-md-none d-lg-none d-xl-inline-block">
+                     <div class="footer-text">
+diff --git a/static/css/main.css b/static/css/main.css
+index 0ed3ba6..ba0f9ee 100644
+--- a/static/css/main.css
++++ b/static/css/main.css
+@@ -1,3 +1,8 @@
++:root
++{
++  --section-padding: 1rem;
++}
++
+ p
+ {
+   font-size: 1.2em;
+@@ -88,6 +93,11 @@ section
+   min-height: 100vh;
+ }
+ 
++#contact .row
++{
++  height: calc(100vh - (2 * var(--section-padding)));
++}
++
+ .contact-container
+ {
+   height: 100%;
+@@ -241,14 +251,18 @@ i
+ 
+ .footer
+ {
+-  height: 40px;
++  height: auto;
+   width: 100%;
++  position: relative;
+ }
+ 
+ .footer-text
+ {
++  position: absolute;
+   text-align: center;
+   font-size: 1.2em;
++  width: 100%;
++  bottom: 0;
+ }
+ 
+ /********************************** Navbar ***********************************/
+@@ -314,7 +328,7 @@ nav a:hover
+ /* Other styles */
+ section
+ {
+-  padding: 1rem;
++  padding: var(--section-padding);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+@@ -362,13 +376,6 @@ section.is-visible h2
+     display: none;
+   }
+ 
+-  .footer
+-  {
+-    height: 40px;
+-    bottom: 0;
+-    width: 100%;
+-  }
+-
+   .footer-text
+   {
+     text-align: center;
+@@ -644,7 +651,6 @@ section.is-visible h2
+       height: 40px;
+       position: fixed;
+       bottom: 0;
+-      width: 100%;
+     }
+ 
+     .footer-text
