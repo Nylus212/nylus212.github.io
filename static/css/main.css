@@ -36,6 +36,7 @@ hr
   font-weight: bold;
   font-size: 32px;
   text-align: center;
+  margin-bottom: 30px;
 }
 
 section
@@ -305,11 +306,6 @@ nav a:hover
   text-decoration: none;
 }
 
-.menu
-{
-   margin-top: 33px;
-}
-
 .menu-icon
 {
   display: block;
@@ -359,11 +355,6 @@ section.is-visible h2
 /* Small devices (landscape phones, >= 576px) */
 @media(min-width: 576px)
 {
-  .logo
-  {
-
-  }
-
   .menu-icon
   {
     width: 100%;
@@ -385,6 +376,11 @@ section.is-visible h2
 /* Medium devices (tablets, >= 768px) */
 @media (min-width: 768px)
 {
+    .logo
+    {
+      font-size: 48px;
+    }
+
     .bubble
     {
       padding: 5px;
@@ -487,11 +483,14 @@ section.is-visible h2
 
   .logo
   {
-    position: fixed;
-    font-size: 36px;
-    top: 0;
-    float: left;
-    margin: 16px 36px;
+    font-size: 48px;
+    margin-top: -80px;
+    margin-bottom: 80px;
+  }
+
+  .img-margin
+  {
+    margin-top: 80px;
   }
 
   section h2
@@ -569,7 +568,7 @@ section.is-visible h2
 
   .whatIusedBox
   {
-    margin-top: 80px;
+    margin-top: 30px;
   }
 
   .projectBox
@@ -581,6 +580,19 @@ section.is-visible h2
 /* Extra large devices (large desktops, >= 1200px) */
 @media (min-width: 1200px)
 {
+    .menu
+    {
+       margin-top: 40px;
+    }
+
+    .logo
+    {
+      position: fixed;
+      top: 0;
+      float: left;
+      margin: 16px 36px;
+    }
+
     img
     {
       margin-top: -10px;
