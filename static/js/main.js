@@ -1,30 +1,4 @@
-/*stickyNavbar = document.getElementById("stickyNavbar")
-var myScrollFunc = function()
-{
-    var y = window.scrollY;
-    if (y >= 50)
-    {
-        stickyNavbar.className = "show"
-    }
-    else
-    {
-        stickyNavbar.className = "hide"
-    }
-};
-
-window.addEventListener("scroll", myScrollFunc);
-*/
-
 /******************************* Navbar ********************************/
-/*// menu toggle button
-$(document).ready(function()
-{
-  $(".menu-icon").on("click", function()
-  {
-    $("nav ul").toggleClass("showing");
-  });
-});*/
-
 
 // srolling effect
 $(window).on("scroll", function()

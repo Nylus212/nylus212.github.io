@@ -99,16 +99,6 @@ section
   height: calc(100vh - (2 * var(--section-padding)));
 }
 
-.contact-container
-{
-  /*height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;*/
-  /*height: 100%;*/
-  /*text-align: center;*/
-}
-
 .bubble
 {
   padding: 5px;
@@ -125,7 +115,6 @@ section
   width: 175px;
   border: solid 3px #fdf6e3;
   border-radius: 25px;
-  /*background-color: #fdf6e3;*/
 }
 
 .bubble h3
@@ -141,17 +130,6 @@ section
 {
   padding-top: 25px;
 }
-
-/*.bubble h3.size
-{
-  font-size: 2.1em;
-}*/
-
-/*.bubble h3.ASP
-{
-  padding-top: 50px;
-  font-size: 2.2em;
-}*/
 
 .col-container
 {
@@ -172,24 +150,12 @@ section
   border-radius: 5px;
   padding: 5px 15px;
   margin: 24px 5px;
-
-  /*overflow: auto;*/
 }
 
 .projectBox h3
 {
   text-align: center;
 }
-
-/*.projectBox p
-{
-  padding: 30px 20px 10px 20px;
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  transform: translate(0%, -50%);
-  -ms-transform: translate(0, -50%);
-}*/
 
 .gitlab
 {
@@ -290,9 +256,6 @@ body
   font-family: Quicksand;
 }
 
-
-
-
 nav
 {
   top: 0;
@@ -308,7 +271,6 @@ nav a
 
 nav a:hover
 {
-  /*font-weight: 1000;*/
   text-shadow: 1px 0 #fdf6e3;
   letter-spacing:1px;
   font-weight:bold;
@@ -339,11 +301,6 @@ section
   align-items: center;
   justify-content: center;
 }
-
-/*section h2
-{
-    opacity: 1;
-}*/
 
 /* Fade in on scroll */
 section h2
@@ -528,12 +485,6 @@ section.is-visible h2
    text-align: center;
   }
 
-  img
-  {
-    /*margin-top: -10px;
-    margin-left: 100px;*/
-  }
-
   .bubble
   {
     padding: 20px 20px;
@@ -710,7 +661,6 @@ section.is-visible h2
       height: 100vh;
       scroll-snap-align: center;
     }
-
 }
 
 /*****************************************************************************/
