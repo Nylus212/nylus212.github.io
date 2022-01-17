@@ -101,7 +101,12 @@ section
 
 .contact-container
 {
-  height: 100%;
+  /*height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;*/
+  /*height: 100%;*/
+  /*text-align: center;*/
 }
 
 .bubble
@@ -216,6 +221,11 @@ a:hover
   padding: 5px 20px;
   margin: 16px auto;
   width: 80%;
+}
+
+.vertical-positioning
+{
+  top: 2%;
 }
 
 i
@@ -457,6 +467,11 @@ section.is-visible h2
       margin-bottom: 100px;
     }
 
+    .vertical-positioning
+    {
+      top: 12%;
+    }
+
     .i-GitLab
     {
       margin-right: 50px;
@@ -488,7 +503,7 @@ section.is-visible h2
     margin-bottom: 80px;
   }
 
-  .img-margin
+  img
   {
     margin-top: 80px;
   }
@@ -575,6 +590,11 @@ section.is-visible h2
   {
     min-height: 230px;
   }
+
+  .vertical-positioning
+  {
+    top: 0%;
+  }
 }
 
 /* Extra large devices (large desktops, >= 1200px) */
@@ -582,7 +602,7 @@ section.is-visible h2
 {
     .menu
     {
-       margin-top: 40px;
+       margin-top: 33px;
     }
 
     .logo
@@ -590,6 +610,7 @@ section.is-visible h2
       position: fixed;
       top: 0;
       float: left;
+      font-size: 36px;
       margin: 16px 36px;
     }
 
@@ -656,6 +677,11 @@ section.is-visible h2
     {
       width: 40%;
       margin-bottom: default;
+    }
+
+    .vertical-positioning
+    {
+      top: 30%;
     }
 
     .footer
